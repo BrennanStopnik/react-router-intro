@@ -8,7 +8,6 @@ const SignUpsPage = () => {
 	
 	return (
 		<div>
-			<hr/>
 			<br/>
 			<h1>Sign Up</h1>
 			<br/>

@@ -17,7 +17,6 @@ const ContactPage = () => {
 
 	return (
 		<div>
-			<hr/>
 			<br/>
 			<h2>Contact</h2>
 			{errorMessage && <p>{errorMessage}</p>}
