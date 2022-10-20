@@ -10,11 +10,12 @@ const SignUpsPage = () => {
 		<div>
 			<hr/>
 			<br/>
-			<h1>Sign Up Page</h1>
+			<h1>Sign Up</h1>
 			<br/>
 			<select onChange={(e) => {
 				navigate(`/signup/${e.target.value}`)
 			}}>
+				<option></option>
 				{signUpList.map((signup, index) => {
 					return (
 						<option key={index} value={signup.email}>
@@ -22,9 +23,8 @@ const SignUpsPage = () => {
 						</option>
 					)
 				})}
-				<option></option>
 			</select>
-			<Outlet context={[signUpList]} />
+			<Outlet context={[signUpList]} />{" "}
 		</div> 
 	)
 }

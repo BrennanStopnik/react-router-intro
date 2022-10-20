@@ -8,7 +8,7 @@ import ContactPage from './Pages/Contact';
 import App from './App';
 import SignUpsCard from './Components/SignUpCard';
 import SignUpsPage from './Pages/SignUpPage';
-import { keyboard } from '@testing-library/user-event/dist/keyboard';
+
 
 const router = createBrowserRouter([
   {  

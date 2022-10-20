@@ -8,14 +8,12 @@ const ContactPage = () => {
   const [lName, setLName] = useState("");
   const [email, setEmail] = useState("");
   const [errorMessage, setErrorMessage] = useState("");
-  const [signupList, handleAddSignup] = useOutletContext();
+  const [signUpList, handleAddSignUp] = useOutletContext();
 	const navigate = useNavigate()
 
 	const redirectToHomePage = () => {
 			navigate("/")
 	}
-
-	const [signUpList, handleAddSignUp] = useOutletContext()
 
 	return (
 		<div>
@@ -30,7 +28,6 @@ const ContactPage = () => {
 				value={fName} 
 				onChange={(e) => {
           setFName(e.target.value);
-          console.log(fName);
         }}
 			/>
 			<br/>
@@ -42,7 +39,6 @@ const ContactPage = () => {
 				value={lName}
 				onChange={(e) => {
           setLName(e.target.value);
-          console.log(lName);
         }}
 			/>
 			<br/>
@@ -53,15 +49,14 @@ const ContactPage = () => {
 				value={email}
 				onChange={(e) => {
           setEmail(e.target.value);
-          console.log(email);
         }}
 			/>
 			<br/>
 			<button 
-				type="submit" 
+				// type="submit" 
 				className="button" 
 				onClick={()=>{
-					handleAddSignUp(fName, lName, email);
+					
 					if (lName === "" || fName === "") {
             setErrorMessage("Please verify your name");
             return;
@@ -71,6 +66,7 @@ const ContactPage = () => {
             setErrorMessage("Please verify your email");
             return;
           }
+					handleAddSignUp(fName, lName, email);
 					redirectToHomePage()
 			}}>Submit</button>
 		</div>
