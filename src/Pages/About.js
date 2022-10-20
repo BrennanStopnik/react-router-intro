@@ -1,9 +1,8 @@
-import Navbar from "../Components/NavBar"
+
 
 const AboutPage = () => {
     return (
         <div>
-            <Navbar />
             <hr/>
             <br/>
             <h2>About</h2>

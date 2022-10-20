@@ -14,9 +14,9 @@ code {
     monospace;
 }
 
-.navbar {
+/* .navbar {
   margin-right: 10px;
-}
+} */
 
 .navbar:link {
   text-decoration: none;
